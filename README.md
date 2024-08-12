@@ -19,6 +19,13 @@ Example
 }
 ```
 
+# Install requirements
+
+Run this command to install requirements (python packages)
+```bash
+pip install -r requirements.txt
+```
+
 # How to use
 
 Run the script by using `python3 main.py` & enter your phone number. They will ask you a confirmation code, copy it from your telegram app & paste it in the terminal
