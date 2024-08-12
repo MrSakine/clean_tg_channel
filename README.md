@@ -28,6 +28,6 @@ After your first login, you won't have to go over all these processes again. Pyr
 
 Finally, run the `/delete` command in your channel to start the cleaning
 
-# Librairy
+# Library
 
 Pyrogram - [Pyrogram](https://docs.pyrogram.org/)
