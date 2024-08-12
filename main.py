@@ -18,11 +18,11 @@ app = Client(name="zone_file_remover", api_id=API_ID, api_hash=API_HASH)
 @app.on_message(filters.channel & filters.command(commands=["delete"], prefixes=["!", "/"]))
 async def forward(client: Client, message: Message):
     chat: Chat = message.chat
-    await app.delete_messages(chat_id=chat.id, message_ids=message.id)
-    messages = app.get_chat_history(chat_id=chat.id)
+    await client.delete_messages(chat_id=chat.id, message_ids=message.id)
+    messages = client.get_chat_history(chat_id=chat.id)
     total = 0
     async for message in messages:
-        await app.delete_messages(chat_id=chat.id, message_ids=message.id)
+        await client.delete_messages(chat_id=chat.id, message_ids=message.id)
         print(
             f"Message {message.text} has been deleted - {datetime.now().strftime("%d/%m/%Y, %H:%M:%S")}")
         total += 1

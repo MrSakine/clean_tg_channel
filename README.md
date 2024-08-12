@@ -6,16 +6,15 @@ Copy and paste the contents of `config.example.json` into a new file named `conf
 
 Replace `<API_ID>` & `<API_HASH>` in `config.json` respectively by their values
 
-Replace `<CHANNEL_ID>` by the ID of the channel you wanna remove contents. If channel ID has `-` sign, this means its private, otherwise its public
+Replace `<CHANNEL_ID>` by the ID of the channel you wanna clean. If channel ID has `-` sign, this means its private, otherwise its public
 
-Replace `<BOT_TOKEN>` by the token of your bot from bot father. Also, make sure to add the same bot to the channel you are gonna clean and make it admin
+Create a new bot from bot father and make sure to add it to the admin list of the channel you are gonna clean
 
 Example
 ```json
 {
     "api_id": "16*****",
     "api_hash": "0f*********",
-    "bot_token": "68*********",
     "channel_id": "-14*******"
 }
 ```
@@ -26,3 +25,9 @@ Run the script by using `python3 main.py` & enter your phone number. They will a
 You will have to enter a password if your account has 2fa enabled (by password)
 
 After your first login, you won't have to go over all these processes again. Pyrogram will store your session for you
+
+Finally, run the `/delete` command in your channel to start the cleaning
+
+# Librairy
+
+Pyrogram - [Pyrogram](https://docs.pyrogram.org/)
